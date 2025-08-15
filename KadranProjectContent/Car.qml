@@ -268,7 +268,7 @@ Rectangle {
                 targets: findDoorNodes("left")
                 property: "eulerRotation.x"
                 to: leftDoorOpen
-                    ? leftDoorOriginalRotation[0].x - 70
+                    ? leftDoorOriginalRotation[0].x + 70
                     : leftDoorOriginalRotation[0].x
                 duration: 1000
                 easing.type: Easing.OutBack
@@ -281,7 +281,7 @@ Rectangle {
                 targets: findDoorNodes("left")
                 property: "y"
                 to: leftDoorOpen
-                    ? leftDoorOriginalY[0] + 15
+                    ? leftDoorOriginalY[0] + 1
                     : leftDoorOriginalY[0]
                 duration: 1000
                 easing.type: Easing.OutQuad
@@ -312,7 +312,7 @@ Rectangle {
                 targets: findDoorNodes("right")
                 property: "y"
                 to: rightDoorOpen
-                    ? rightDoorOriginalY[0] + 15
+                    ? rightDoorOriginalY[0] + 1
                     : rightDoorOriginalY[0]
                 duration: 1000
                 easing.type: Easing.OutQuad
